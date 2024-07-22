@@ -24,7 +24,8 @@ repos:
     rev: 7.0.0
     hooks:
     -   id: flake8
-        args: [--max-line-length=120]
+        args: [--max-line-length=120, --extend-ignore=E203,E701]
+
 -   repo: https://github.com/PyCQA/autoflake
     rev: v2.2.1
     hooks:
